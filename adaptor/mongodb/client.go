@@ -355,8 +355,6 @@ func (c *Client) initConnection() error {
 		if err := mgoSession.DB("local").C("oplog.rs").Find(bson.M{}).Limit(1).One(nil); err != nil {
 			return OplogAccessError{"not authorized for oplog.rs collection"}
 		}
-		l
-
 		log.Infoln("oplog access good")
 	}
 	c.mgoSession = mgoSession
