@@ -17,6 +17,7 @@ m = mongodb({
   // "tail": false,
   // "ssl": false,
   // "cacerts": ["/path/to/cert.pem"],
+  // "ssl_allow_invalid_hostnames": false,
   // "wc": 1,
   // "fsync": false,
   // "bulk": false,
